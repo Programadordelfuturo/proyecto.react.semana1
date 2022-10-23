@@ -1,0 +1,57 @@
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 236, 236);
+  height: 625px;
+  width: 1365px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 19px;
+}
+
+.sheetPaper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  width: 700px;
+  border-radius: 50px;
+  background-color: white;
+  text-align: center;
+}
+
+.sheetPaper div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  gap: 35px;
+  height: 33%;
+}
+
+.sheetPaper p{
+  width: 87%;
+  height: 20%;
+  margin: 20px auto;
+}
+
+.container-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 95%;
+}
+
+.container-button button { 
+  border: 3px solid transparent;
+  width: 60px;
+  border-radius: 150px;
+  text-align: center;
+}
+
+.container-button button:hover{
+  border: 3px solid rgba(200, 20, 200, 0.75);
+}
+
+.container-button button:after { 
+  border: 3px solid transparent;
+}
