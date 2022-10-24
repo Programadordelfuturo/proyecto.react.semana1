@@ -35,7 +35,7 @@ function App() {
     <div className='body' style={{background: `${color}`}}>
       <div className='sheetPaper' style={{color: `${color}`}}>
         <Quotes json={json}/>
-        <ButtonQuotes dual={dual}/>
+        <ButtonQuotes dual={dual} color={color}/>
       </div>
     </div>
   )

@@ -46,6 +46,7 @@
   width: 60px;
   border-radius: 150px;
   text-align: center;
+  background: red;
 }
 
 .container-button button:hover{
