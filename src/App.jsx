@@ -31,8 +31,10 @@ function App() {
     sentence();
   }
 
+  document.body.style = `background: ${color}`
+
   return (
-    <div className='body' style={{background: `${color}`}}>
+    <div className='body'>
       <div className='sheetPaper' style={{color: `${color}`}}>
         <Quotes json={json}/>
         <ButtonQuotes dual={dual} color={color}/>

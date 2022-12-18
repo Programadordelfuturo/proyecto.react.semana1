@@ -1,58 +1,74 @@
-.body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(0, 236, 236);
-  height: 625px;
-  width: 1365px;
+* {
   font-family: 'Times New Roman', Times, serif;
   font-size: 19px;
 }
 
-.sheetPaper {
+body {
+  display: grid;
+  place-content: center;
+}
+
+.body {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 300px;
-  width: 700px;
+  overflow-x: hidden;
+}
+
+.sheetPaper {
+  height: 43vh;
+  width: 56vw;
   border-radius: 50px;
   background-color: white;
   text-align: center;
 }
 
-.sheetPaper div {
+@media (max-width: 1000px) {
+  .sheetPaper {
+    height: 63vh;
+    width: 63vw;
+    border-radius: 50px;
+    background-color: white;
+    text-align: center;
+  }
+}
+
+.author {
   display: flex;
   flex-direction: column;
-  margin-top: 25px;
-  gap: 35px;
+  margin: 25px 0px;
+  gap: 55px;
   height: 33%;
 }
 
-.sheetPaper p{
+.author p{
   width: 87%;
   height: 20%;
   margin: 20px auto;
 }
 
+@media (max-width: 1000px){
+  .author p {
+    margin: 60px auto;
+  }
+}
+
 .container-button {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  width: 95%;
+  position: relative;
+  top: 25%;
+  left: 40%;
 }
 
-.container-button button { 
+@media (max-width: 1000px){
+  .container-button {
+    position: relative;
+    top: 38%;
+    left: 34%;
+  }
+}
+
+button {
+
   border: 3px solid transparent;
-  width: 60px;
-  border-radius: 150px;
-  text-align: center;
-  background: red;
-}
-
-.container-button button:hover{
-  border: 3px solid rgba(200, 20, 200, 0.75);
-}
-
-.container-button button:after { 
-  border: 3px solid transparent;
+  width: 20px;
+  height: 45px;  
+  outline: none;
 }
